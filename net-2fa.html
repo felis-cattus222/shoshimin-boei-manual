@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>二要素認証の設定ガイド：主要サービスの入口｜小市民防衛マニュアル</title><meta name="description" content="二要素認証の設定ガイドとして、主要サービスの入口と設定の手順をまとめます。二要素認証の仕組み、認証アプリとSMSの使い分け、バックアップコードの保管までを整理します。"><link rel="canonical" href="https://felis-cattus222.github.io/shoshimin-boei-manual/net-2fa.html"><meta property="og:type" content="article"><meta property="og:site_name" content="小市民防衛マニュアル"><meta property="og:title" content="二要素認証の設定ガイド：主要サービスの入口｜小市民防衛マニュアル"><meta property="og:description" content="二要素認証の設定ガイドとして、主要サービスの入口と設定の手順をまとめます。二要素認証の仕組み、認証アプリとSMSの使い分け、バックアップコードの保管までを整理します。"><meta property="og:url" content="https://felis-cattus222.github.io/shoshimin-boei-manual/net-2fa.html"><meta property="og:image" content="https://felis-cattus222.github.io/shoshimin-boei-manual/img/cat-net.jpg"><meta name="twitter:card" content="summary_large_image"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "二要素認証の設定ガイド：主要サービスの入口", "description": "二要素認証の設定ガイドとして、主要サービスの入口と設定の手順をまとめます。二要素認証の仕組み、認証アプリとSMSの使い分け、バックアップコードの保管までを整理します。", "author": {"@type": "Person", "name": "平賀辰人", "alternateName": "ひらが たつひと"}, "publisher": {"@type": "Organization", "name": "222工房"}, "datePublished": "2026-11-26", "inLanguage": "ja", "mainEntityOfPage": "https://felis-cattus222.github.io/shoshimin-boei-manual/net-2fa.html"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "トップ", "item": "https://felis-cattus222.github.io/shoshimin-boei-manual/"}, {"@type": "ListItem", "position": 2, "name": "ネット・情報防犯", "item": "https://felis-cattus222.github.io/shoshimin-boei-manual/net.html"}, {"@type": "ListItem", "position": 3, "name": "二要素認証の設定ガイド：主要サービスの入口", "item": "https://felis-cattus222.github.io/shoshimin-boei-manual/net-2fa.html"}]}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-W16SHM1PG4"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-W16SHM1PG4');</script></head><body><header class="site-header"><div class="wrap header-in"><a class="brand" href="index.html"><span class="brand-name">小市民防衛マニュアル</span><span class="brand-sub">武術45年・店舗運営の実務から書く防犯案内</span></a><nav class="gnav"><a href="home.html">自宅</a><a href="solo.html">一人暮らし</a><a href="travel.html">旅行</a><a href="vehicle.html">車両</a><a href="shop.html">店舗</a><a href="net.html">ネット</a><a href="goshin.html">護身術</a><a href="bosai.html">防災</a></nav></div></header><main class="wrap"><nav class="crumb"><a href="index.html">トップ</a> &gt; <a href="net.html">ネット・情報防犯</a> &gt; <span>二要素認証の設定ガイド：主要サービスの入口</span></nav><h1>二要素認証の設定ガイド：主要サービスの入口</h1><p class="lead">パスワードだけでは、アカウントを守りきれない場合があります。二要素認証は、パスワードに加えてもう一つの確認を求める仕組みです。主要なサービスの入口と、設定の手順をまとめます。</p><figure class="eyecatch"><img src="img/cat-net.jpg" alt="ネット・情報防犯のイラスト" loading="lazy"></figure>
+
+<section><h2>二要素認証とは何か</h2>
+<p>二要素認証は、ログインするときに、パスワードに加えてもう一つの要素で本人確認をする仕組みです。もう一つの要素には、認証アプリが表示する数字（ワンタイムパスワード）、SMSで届くコード、セキュリティキーなどがあります。パスワードが漏れてしまっても、二要素認証が設定されていれば、第三者がログインするのを防ぎやすくなります。</p>
+<p>二要素認証は、「2段階認証」「2FA」など、サービスによって呼び方が異なります。呼び方が違っても、仕組みは同じです。パスワードに加えて、もう一つの確認を求めることです。設定は、サービスごとに一度だけ行えばよく、その後はログインのたびに確認が求められます。手間に感じることもありますが、アカウントを守るための基本の対策です。</p></section>
+<section><h2>設定する前の準備</h2>
+<ul class="check">
+<li>設定するサービスのアカウントに、ログインできることを確認する</li>
+<li>スマートフォンに、認証アプリを入れておく（認証アプリは、複数のサービスで共通して使えるものが多い）</li>
+<li>バックアップコードが発行されたら、紙に控えて自宅の決まった場所に保管する</li>
+<li>スマートフォンを買い替えたときの、認証アプリの引き継ぎ方法を確認する</li>
+<li>電話番号が変わったときに、登録情報の変更方法を確認する</li>
+</ul>
+<p>二要素認証を設定する前に、バックアップコードの保管方法を決めておくことが大切です。バックアップコードは、スマートフォンを紛失したり、認証アプリが使えなくなったりしたときに、ログインするための予備の手段です。バックアップコードを、スマートフォンの中だけに保存しないようにします。紙に控えて、自宅の決まった場所に保管するのが基本です。</p></section>
+<section><h2>主要サービスの入口：どこで設定するか</h2>
+<p>二要素認証の設定場所は、サービスによって異なりますが、一般に「設定」や「アカウント」から、「セキュリティ」や「ログインとセキュリティ」へ進む流れです。以下は、主要なサービスの入口の探し方です。画面の表示は、サービスの更新で変わることがあるため、入口が見つからない場合は、サービスのヘルプで「二要素認証」や「2段階認証」と検索します。</p>
+<ul>
+<li><strong>Google アカウント</strong>：「Google アカウント」→「セキュリティ」→「2段階認証プロセス」。認証アプリや、セキュリティキーを登録できます。</li>
+<li><strong>Apple ID</strong>：iPhoneの「設定」→自分の名前→「サインインとセキュリティ」→「2ファクタ認証」。Appleのデバイスで確認コードを受け取る仕組みです。</li>
+<li><strong>Microsoft アカウント</strong>：「Microsoft アカウント」→「セキュリティ」→「2段階認証」。認証アプリや、SMSでの確認が選べます。</li>
+<li><strong>LINE</strong>：「設定」→「アカウント」→「ログイン許可」や「2段階認証」の項目を確認します。LINEのログインには、パスワードに加えて、認証の確認が求められる場合があります。</li>
+<li><strong>Amazon</strong>：「アカウントサービス」→「ログインとセキュリティ」→「2段階認証」。認証アプリや、SMSでの確認が選べます。</li>
+<li><strong>SNS（X・Instagram・Facebookなど）</strong>：各サービスの「設定」→「セキュリティ」→「2段階認証」や「ログイン認証」の項目を確認します。呼び方はサービスによって異なります。</li>
+<li><strong>銀行・決済サービス</strong>：銀行や、決済サービスのアプリでは、二要素認証に加えて、生体認証（指紋や顔認証）が使われる場合があります。設定は、アプリの「セキュリティ」や「設定」から確認します。</li>
+</ul>
+<p>設定の手順は、サービスごとに画面の指示に従って進めます。認証アプリを使う場合は、画面に表示されるQRコードを認証アプリで読み取り、表示された数字を入力します。SMSを使う場合は、登録した電話番号に届いたコードを入力します。設定が終わったら、一度ログアウトして、再度ログインを試し、二要素認証が作動することを確認します。</p></section>
+<section><h2>認証アプリとSMSの使い分け</h2>
+<p>認証方法には、認証アプリとSMSがあります。認証アプリは、スマートフォンにインストールしたアプリが、一定時間ごとに変わる数字を表示する仕組みです。SMSは、登録した電話番号にコードが届く仕組みです。どちらも、二要素認証として使えますが、認証アプリの方が、SIMカードの不正な再発行（SIMスワップ）などの手口の影響を受けにくいとされています。</p>
+<p>認証アプリが使えるサービスでは、認証アプリを選ぶのが基本です。SMSしか選べないサービスでは、SMSの二要素認証を使うことが、使わないよりは安心です。セキュリティキーは、USBやNFCで接続する物理的な鍵で、対応するサービスでは最も強い認証方法とされています。セキュリティキーは、主要なアカウント（メールや、クラウドサービスなど）から使い始めるのが現実的です。どの方法を選ぶ場合でも、バックアップコードの保管を忘れないようにします。</p></section>
+<section><h2>設定後のチェックリスト</h2>
+<ul class="check">
+<li>主要なアカウント（メール・SNS・銀行・買い物）に二要素認証を設定した</li>
+<li>バックアップコードを紙に控え、自宅の決まった場所に保管した</li>
+<li>設定後に一度ログアウトし、再度ログインして二要素認証が作動することを確認した</li>
+<li>スマートフォンを買い替えたときの引き継ぎ方法を確認した</li>
+<li>家族のアカウントにも、二要素認証の設定を勧めた</li>
+<li>使っていないサービスのアカウントは、削除または二要素認証を設定した</li>
+</ul>
+<p>二要素認証の設定は、一度にすべてを済ませる必要はありません。まず、メールアドレスのアカウントから設定します。メールアドレスは、他のサービスのアカウントを復旧するための入口になるため、最も大切なアカウントです。次に、銀行や決済サービス、SNSの順に進めます。一つずつ設定することで、アカウント全体の守りが着実に上がります。</p></section><p class="pr">※PR・広告を含みます</p><section class="products"><h2>道具の紹介</h2><p>この記事の手順で検討されることの多い道具の検索入口です。価格や仕様は販売ページで確認してください。</p><p><a href="https://search.rakuten.co.jp/search/mall/%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E3%82%AD%E3%83%BC/" rel="nofollow sponsored noopener" target="_blank">楽天で「セキュリティキー」を探す（アフィリエイトリンクは準備中）</a></p><p><a href="https://search.rakuten.co.jp/search/mall/%E3%83%91%E3%82%B9%E3%83%AF%E3%83%BC%E3%83%89%20%E7%AE%A1%E7%90%86/" rel="nofollow sponsored noopener" target="_blank">楽天で「パスワード 管理」を探す（アフィリエイトリンクは準備中）</a></p><p><a href="https://search.rakuten.co.jp/search/mall/%E3%82%B9%E3%83%9E%E3%83%9B%20%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/" rel="nofollow sponsored noopener" target="_blank">楽天で「スマホ セキュリティ」を探す（アフィリエイトリンクは準備中）</a></p></section><section><h2>関連記事</h2><ul class="related"><li><a href="net-password.html">パスワードの作り方と使い回しをやめる手順</a></li><li><a href="net-sagi.html">特殊詐欺・フィッシングの見分け方と家族の合言葉</a></li><li><a href="net-takuhai-sagi.html">宅配便を装うSMS・メールの見分け方</a></li></ul><p><a href="net.html">ネット・情報防犯のトップへ戻る</a> / <a href="law.html">正当防衛・過剰防衛・凶器携帯の基礎</a></p></section><section class="author-box"><h2>著者</h2><p><strong>平賀辰人（ひらが たつひと）</strong> — 武術歴45年、店舗運営の実務経験から防犯を書きます。空手は幼少期から、警察学校の武術教官を務めた師匠に学んだ。所属する武術団体DMAでは、メンバーが刑事ドラマのアクション指導も行っている。DMAの顧問は護身術の本も出版している。運営は222工房です。著者は気功の会も主宰しています：<a href="https://felis-cattus222.github.io/hokushinkai/">北辰会</a></p><p><a href="about.html">著者プロフィールを詳しく見る</a></p></section></main><footer class="site-footer"><div class="wrap"><nav class="fnav"><a href="index.html">トップ</a><a href="law.html">法律の基礎</a><a href="about.html">著者について</a><a href="disclosure.html">広告・PR方針</a><a href="editorial-policy.html">情報の作り方</a></nav><p class="copy">© 222工房 / 著者 平賀辰人（ひらが たつひと）</p><p class="fnote">本サイトの法律情報は一般的な情報であり、個別の法律相談ではありません。</p></div></footer></body></html>
